@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+ background: #0c1022;
+ color: white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Portfolio{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}    
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+.navbar a.home,
+.navbar a:hover{
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.about{
+    width: 100%;
+    margin-top: 20%;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.content{
+    width: 500px;
+}
+
+.content h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.content h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: -120px;
+    color: white;
+}
+
+.content h2{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.content p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.hireme{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.hireme::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+    z-index: -1;
+}
+
+.hireme:hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #3cf, #f06, #3cf);
+    z-index: -1;
+}
+
+
+.homeimg{
+    width: 410px;
+    height: 410px;
+    margin-left: 50%;
+    margin-top: -25%;
+}
+
+.homeimg .edit-img{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #f06, #3cf);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeimg .edit-img::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+ background: #0c1022;
+    border-radius: 50%;
+}
+
+.edit-img .image1{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.homeimg img{
+    position: absolute;
+    left: 51%;
+    max-width: 350px;
+    margin-top: -490px;
+    object-fit: cover;
+}
+
+fieldset{
+    width: 600px;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+fieldset h3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+}
+
+#skills input{
+    width: 300px;
+    height: 5px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.2);
+}
+
+#skills h3{
+    color: white;
+}
+
+#html{
+    margin-left: 100px;
+}
+#css{
+    margin-left: 110px;
+}
+#js{
+    margin-left: 122px;
+}
+#speed{
+    margin-left: 44px;
+}
+#accuracy{
+    margin-left: 27px;
+}
+
+#Languages{
+    margin-left: 50%;
+    margin-top: -26.5%;
+}
+
+#Languages h3{
+    color: white;
+}
+
+#Languages img{
+    height: 140px;
+}
+
+.html-logo{
+    margin-top: -10px;
+    margin-left: 36%;
+}
+
+.css-logo{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.js-logo{
+    margin-left: 60%;
+    margin-top: -145px;
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+
+#rightside{
+    margin-left: 50%;
+    margin-top: -24.5%;
+}
+
+.github{
+    height: 370px;
+    width: 400px;
+    margin-left: 200px;
+}
+
+#githublogo1{
+    height: 150px;
+    margin-top: 38px;
+    margin-left: 25%;
+}
+
+#githublogo2{
+    height: 150px;
+    margin-top: 38px;
+    margin-left: 25%;
+}
+
+h3{
+    color: #f06;
+}
+
+.github h3{
+    color: white;
+}
+
+.github h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: medium;
+    color: white;
+    margin-left: 25%;
+}
+
+#contact{
+    margin-top: 60px;
+    margin-bottom: -40px;
+    color: #3cf;
+}
+
+#align{
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    padding: 1px;
+    margin-left: 70px;
+    margin-bottom: -30px;
+}
+
+.address{
+    height: 200px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 70px;
+    
+}
+
+.address:hover{
+    height: 200px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 70px;
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+    color: white;
+    
+}
+
+#middle:hover{
+    background: linear-gradient(45deg, #3cf, #f06, #3cf);
+    color: white;
+}
+
+.address h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address p{
+    margin-left: 40px;
+    margin-bottom: -500px;
+}
+
+#left{
+    margin-top: 10%;
+
+}
+
+#middle{
+    margin-left: 35%;
+    margin-top: -13.2%;
+}
+
+#right{
+    margin-left: 65%;
+    margin-top: -13.2%;
+}
+
+#left p{
+    margin-top: 20px;
+}
+
+#middle p{
+    margin-top: 30px;
+}
+
+#right p{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+form{
+    margin-top: 40px;
+}
+
+#form input{
+    width: 500px;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: -110px;
+    background-color: aliceblue;
+}
+
+#name{
+    margin-top: 20px;
+}
+
+#form textarea{
+    width: 1080px;
+    height: 200px;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    background-color: aliceblue;
+}
+
+button{
+    border: 1px white;
+    border-radius: 4px;
+    background: -webkit-gradient(linear,
+    left top, left bottom, from(rgb(48, 163, 246)), to(rgb(30, 127, 237)));
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    padding: 10px;
+    margin-left: 40%;
+    margin-top: 15px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+}
